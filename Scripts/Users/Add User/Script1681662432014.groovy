@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import com.github.javafaker.Faker as Faker
 import groovy.json.JsonSlurper as JsonSlurper
 
-
 response = WS.sendRequest(findTestObject('Users/Add User'))
 
 WS.verifyResponseStatusCode(response, 201)

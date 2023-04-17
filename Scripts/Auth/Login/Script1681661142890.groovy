@@ -21,23 +21,9 @@ import groovy.json.JsonSlurper as JsonSlurper
 
 def jsonSlurper = new JsonSlurper()
 
-def jsonResponse = jsonSlurper.parseText(response.getResponseBodyContent())
-
-//def faker = new Faker()
-
-//GlobalVariable.name = faker.name().fullName()
-//
-//GlobalVariable.email = faker.internet().emailAddress()
-//
-//GlobalVariable.password = faker.internet().password()
-
-//System.out.println(GlobalVariable.name)
-//
-//System.out.println(GlobalVariable.email)
-//
-//System.out.println(GlobalVariable.password)
-
 response = WS.sendRequest(findTestObject('Auth/Login'))
+
+def jsonResponse = jsonSlurper.parseText(response.getResponseBodyContent())
 
 WS.verifyResponseStatusCode(response, 201)
 
@@ -46,3 +32,6 @@ WS.verifyElementPropertyValue(response, 'status', 'success')
 WS.verifyElementPropertyValue(response, 'message', 'Authentication berhasil ditambahkan')
 
 GlobalVariable.accessToken = jsonResponse.data.accessToken
+
+CustomKeywords.'schemaAssertion.LoginSchemaAssertion.loginSchemaAssertion'(response)
+
