@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "2D1845EE3632D6BA5A4B4B2805D7875C",
+  "keywordFileContentHash": "DAE7184EA532D89EC7E1618A921ED24D",
   "keywordClasses": [
     {
       "name": "schemaAssertion.LoginSchemaAssertion",
@@ -20,10 +20,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

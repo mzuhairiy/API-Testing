@@ -16,30 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.github.javafaker.Faker as Faker
 
-def faker = new Faker()
-
-GlobalVariable.name = faker.name().fullName()
-
-GlobalVariable.email = faker.internet().emailAddress()
-
-GlobalVariable.password = faker.internet().password()
-
-//System.out.println(GlobalVariable.name)
-//
-//System.out.println(GlobalVariable.email)
-//
-//System.out.println(GlobalVariable.password)
-
-response = WS.sendRequest(findTestObject('Auth/Registration'))
+response = WS.sendRequest(findTestObject('Units/Add Unit'))
 
 WS.verifyResponseStatusCode(response, 201)
 
 WS.verifyElementPropertyValue(response, 'status', 'success')
 
-WS.verifyElementPropertyValue(response, 'message', 'Toko berhasil didaftarkan')
+WS.verifyElementPropertyValue(response, 'message', 'Unit berhasil ditambahkan')
 
-WS.verifyElementPropertyValue(response, 'data.name', GlobalVariable.name)
-
-WS.verifyElementPropertyValue(response, 'data.email', GlobalVariable.email)
+WS.verifyElementPropertyValue(response, 'data.name', GlobalVariable.unit_name)

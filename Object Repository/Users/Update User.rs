@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Add User</name>
+   <name>Update User</name>
    <tag></tag>
-   <elementGuidId>e335685d-827a-4f80-81de-64d8ac201c96</elementGuidId>
+   <elementGuidId>891da62b-c381-4ec8-a3bf-fa632b1370c3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -20,7 +20,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${name}\&quot;,\n    \&quot;email\&quot;: \&quot;${email}\&quot;,\n    \&quot;password\&quot;: \&quot;${password}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;name\&quot;: \&quot;zuhairi\&quot;,\n    \&quot;email\&quot;: \&quot;user@example.com\&quot;\n}\n&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -28,16 +28,24 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>1d7652b1-ea9c-4dc2-b9df-f1260588cd75</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.accessToken}</value>
-      <webElementGuid>9f14d725-d4c4-4dbf-99f0-48a6cb2ad977</webElementGuid>
+      <webElementGuid>58fa8ade-468b-474f-936b-5c6703eef61f</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.BASE_URL}/users</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.BASE_URL}/users/${GlobalVariable.userId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -47,25 +55,25 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
+      <defaultValue>GlobalVariable.userId</defaultValue>
+      <description></description>
+      <id>6006e3e5-a6d7-4f32-b229-64ef03a834dd</id>
+      <masked>false</masked>
+      <name>userId</name>
+   </variables>
+   <variables>
       <defaultValue>GlobalVariable.name</defaultValue>
       <description></description>
-      <id>39e098d9-a7fa-4823-9ec3-c31c1d5e4bca</id>
+      <id>e82e46cc-3304-43f9-8d22-11cb5537d286</id>
       <masked>false</masked>
       <name>name</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.email</defaultValue>
       <description></description>
-      <id>21232fe6-c17a-4f39-b061-13db8862885c</id>
+      <id>27b3b7bd-857e-48c1-b7f3-db2a2980c356</id>
       <masked>false</masked>
       <name>email</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.password</defaultValue>
-      <description></description>
-      <id>d9e79970-a939-463e-9354-5ef67ba7d416</id>
-      <masked>false</masked>
-      <name>password</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

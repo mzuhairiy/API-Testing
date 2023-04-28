@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Users</name>
+   <name>Units</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,19 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>52ec76cc-4c5c-4fe4-869f-ba97069672a3</testSuiteGuid>
+   <testSuiteGuid>f4235acd-b096-4d6b-99d8-debcc1758ea2</testSuiteGuid>
    <testCaseLink>
-      <guid>d757b627-cd00-4832-93bb-613555d94848</guid>
+      <guid>b2bcb640-6d28-4aee-926e-3b4bbd737d7d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Users/Add User</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6f02afb5-5964-46ae-8eaa-fa9964916422</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Users/Get User</testCaseId>
+      <testCaseId>Test Cases/Units/Add Unit</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
