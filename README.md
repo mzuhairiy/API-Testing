@@ -1,2 +1,2 @@
-# katalon_practice
-Learn API Testing
+# API Testing
+API Testing using Katalon
