@@ -1,2 +1,2 @@
-# katalon_practice
-API Testing
+# API Testing
+API Testing with Katalon and Postman
