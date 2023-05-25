@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get User</name>
+   <name>Get Category</name>
    <tag></tag>
-   <elementGuidId>6d90b555-713e-4cfd-a012-9818973cae9f</elementGuidId>
+   <elementGuidId>65d12b3e-95c7-452a-adee-d0d89c2ac05b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -15,13 +15,13 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
   &quot;text&quot;: &quot;&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
    <httpBodyType>text</httpBodyType>
@@ -30,8 +30,8 @@
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>1d7652b1-ea9c-4dc2-b9df-f1260588cd75</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>b71a7244-2668-49ee-bb16-19e80de4527a</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -39,13 +39,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.accessToken}</value>
-      <webElementGuid>58fa8ade-468b-474f-936b-5c6703eef61f</webElementGuid>
+      <webElementGuid>30833792-8801-44b8-8349-68e44fc262ae</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.BASE_URL}/users/${GlobalVariable.userId}</restUrl>
+   <restUrl>${GlobalVariable.BASE_URL}/categories/${GlobalVariable.categoryId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -54,27 +54,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>GlobalVariable.userId</defaultValue>
-      <description></description>
-      <id>6006e3e5-a6d7-4f32-b229-64ef03a834dd</id>
-      <masked>false</masked>
-      <name>userId</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.name</defaultValue>
-      <description></description>
-      <id>e82e46cc-3304-43f9-8d22-11cb5537d286</id>
-      <masked>false</masked>
-      <name>name</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.email</defaultValue>
-      <description></description>
-      <id>27b3b7bd-857e-48c1-b7f3-db2a2980c356</id>
-      <masked>false</masked>
-      <name>email</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

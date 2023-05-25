@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Units</name>
+   <name>Category</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,19 +10,19 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>f4235acd-b096-4d6b-99d8-debcc1758ea2</testSuiteGuid>
+   <testSuiteGuid>ff3558d2-c69b-4583-8548-cda5f5e1e798</testSuiteGuid>
    <testCaseLink>
-      <guid>b2bcb640-6d28-4aee-926e-3b4bbd737d7d</guid>
+      <guid>3f75eb82-2f7a-4ae4-bff5-27eaa47b2725</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Units/Add Unit</testCaseId>
+      <testCaseId>Test Cases/Category/Add Category</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7cf96095-d6f0-4d7b-bae4-45e9bd4da786</guid>
+      <guid>d2f6cd2a-7754-42e4-ba2f-5c414dab717a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Units/Get Unit</testCaseId>
+      <testCaseId>Test Cases/Category/Get Category</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

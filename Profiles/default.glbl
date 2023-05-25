@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA3ZjMyZjUwLTRkZDMtNDA5Ny04N2JkLWQzM2QxZGU3NWI0NyIsImNvbXBhbnlJZCI6IjE0YmUwODA3LWQ1ZjctNGQyMS1hNTI1LWVhN2NlNGJjZDZjNSIsImlhdCI6MTY4MjY4NjE1OX0.Ok7LGJDQtoarhh04zsYKl6JYkTahgGvXZz1OubNCjD4'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA3ZjMyZjUwLTRkZDMtNDA5Ny04N2JkLWQzM2QxZGU3NWI0NyIsImNvbXBhbnlJZCI6IjE0YmUwODA3LWQ1ZjctNGQyMS1hNTI1LWVhN2NlNGJjZDZjNSIsImlhdCI6MTY4NDk4NTc1Mn0.oiUSZYVd-SFX3eIw-F_VemADo6mzCUhWddYfANi2d30'</initValue>
       <name>accessToken</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -36,12 +36,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'bab70ae5-0044-4727-b30a-8151a903c6fb'</initValue>
+      <initValue>'29cf44a7-947f-4c5b-9f7d-20ef21f3c442'</initValue>
       <name>unitId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gram'</initValue>
+      <initValue>'kilogram'</initValue>
       <name>unit_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'c068b06a-43be-432d-bc66-1ee73f65a3b3'</initValue>
+      <name>categoryId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Snacks'</initValue>
+      <name>categoryName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
